@@ -1,15 +1,8 @@
-function calcArea(base, height) {
-    let areas = [];
+let string = "Qualquer"
 
-    for (let i = 0; i < base.length; i++) {
-        areas.push((base[i] * height[i]) / 2);
-    }
-
-    return areas;
+function splitSentence(string) {
+    let arrayDeStrings = string.split(" ");
+    return arrayDeStrings
 }
 
-let bases = [10, 5, 51];
-let heights = [50, 2, 1];
-
-let result = calcArea(bases, heights);
-console.log(result);
+console.log(splitSentence(string));

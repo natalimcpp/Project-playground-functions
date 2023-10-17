@@ -43,3 +43,21 @@ let heights = [50, 2, 1];
 
 let result = calcArea(bases, heights);
 console.log(result);
+
+//Desafio 3
+ 
+let frase =  "vamo que vamo"
+let arrayDePalavras = frase.split(" ");
+console.log(arrayDePalavras)
+
+//Desafio 3
+
+let string = "Qualquer frase aqui"
+
+function splitSentence(string) {
+    let arrayDeStrings = string.split(" ");
+    return arrayDeStrings
+}
+
+console.log(splitSentence(string));
+
