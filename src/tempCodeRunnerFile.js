@@ -1,8 +1,9 @@
-let string = "Qualquer"
+function concatName(array) {
 
-function splitSentence(string) {
-    let arrayDeStrings = string.split(" ");
-    return arrayDeStrings
+    let resultado = [array[array.length - 1], array[0]];
+    console.log(resultado);
 }
 
-console.log(splitSentence(string));
+let listaExemplo = ['foguete', 'não', 'tem', 'ré']
+
+concatName(listaExemplo);

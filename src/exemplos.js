@@ -14,6 +14,7 @@ let ex2= 41+20;
 
 console.log(compareTrue(ex1, ex2));
 
+
 //Desafio 2 
 
 function calcArea(base, height) {
@@ -25,6 +26,7 @@ let base = 10
 let height = 50
 
 console.log(calcArea(base, height)); 
+
 
 //Desafio 2 com listas
 
@@ -44,13 +46,17 @@ let heights = [50, 2, 1];
 let result = calcArea(bases, heights);
 console.log(result);
 
+
+
 //Desafio 3
  
 let frase =  "vamo que vamo"
 let arrayDePalavras = frase.split(" ");
 console.log(arrayDePalavras)
 
-//Desafio 3
+
+
+//Desafio 3.2
 
 let string = "Qualquer frase aqui"
 
@@ -61,3 +67,25 @@ function splitSentence(string) {
 
 console.log(splitSentence(string));
 
+
+
+
+//Desafio 4 
+
+let lista = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let concatName = [lista[lista.length - 1], lista[0]];
+console.log(concatName);
+
+
+
+//Desafio 4
+
+function concatName(array) {
+
+    let resultado = [array[array.length - 1], array[0]];
+    console.log(resultado);
+}
+
+let listaExemplo = ['foguete', 'não', 'tem', 'ré']
+
+concatName(listaExemplo);
