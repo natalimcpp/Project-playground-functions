@@ -1,9 +1,8 @@
-function concatName(array) {
-
-    let resultado = [array[array.length - 1], array[0]];
-    console.log(resultado);
+function footballPoints(wins, ties) {
+    return (wins * 3) + ties;
 }
 
-let listaExemplo = ['foguete', 'não', 'tem', 'ré']
+let wins = 14;
+let ties = 8;
 
-concatName(listaExemplo);
+console.log(footballPoints(wins, ties));

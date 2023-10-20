@@ -89,3 +89,21 @@ function concatName(array) {
 let listaExemplo = ['foguete', 'não', 'tem', 'ré']
 
 concatName(listaExemplo);
+
+//Desafio 5
+
+function footballPoints(wins, ties) {
+    let pontuacao = (wins * 3) + (ties * 1);
+    return pontuacao;
+}
+
+let wins = 14;
+let ties = 8;
+
+console.log(footballPoints(wins, ties));
+
+//Desafio 5 usando menos código - com ajuda do chatgpt
+
+function footballPoints(wins, ties) {
+    return (wins * 3) + ties;
+}
