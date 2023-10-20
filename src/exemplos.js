@@ -107,3 +107,25 @@ console.log(footballPoints(wins, ties));
 function footballPoints(wins, ties) {
     return (wins * 3) + ties;
 }
+
+//Desafio 6 
+
+function highest(arr) {
+    return Math.max(...arr);
+};
+
+function highestCount(arr,numero) {
+    let contador = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == numero) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+let arrayTeste = [9, 1, 2, 3, 9, 5, 7];
+let maiorNumero = highest(arrayTeste);
+let repeticoes = highestCount(arrayTeste,maiorNumero);
+
+console.log(repeticoes);
