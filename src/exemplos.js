@@ -108,6 +108,7 @@ function footballPoints(wins, ties) {
     return (wins * 3) + ties;
 }
 
+
 //Desafio 6 
 
 function highest(arr) {
@@ -124,8 +125,28 @@ function highestCount(arr,numero) {
     return contador;
 }
 
-let arrayTeste = [9, 1, 2, 3, 9, 5, 7];
+let arrayTeste = [9, 1, 2, 25, 3, 9, 5, 25, 7, 25];
 let maiorNumero = highest(arrayTeste);
 let repeticoes = highestCount(arrayTeste,maiorNumero);
 
 console.log(repeticoes);
+
+//Desafio 7
+
+function catAndMouse(x, y, z) {
+    let mouse = x;
+    let cat1 = y;
+    let cat2 = z;
+
+    if ((Math.abs(mouse-cat1)) < (Math.abs(mouse - cat2))) {
+        return "cat 1"
+    } else if ((Math.abs(mouse-cat1)) > (Math.abs(mouse - cat2))) {
+
+        return "cat 2"         
+    } else {
+
+        return "os gatos trombam e o gato foge"
+    }
+}
+
+console.log (catAndMouse(5, 1, 8));

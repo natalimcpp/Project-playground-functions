@@ -1,20 +1,19 @@
-function highest(arr) {
-    
-    return Math.max(...arr);
-};
+function catAndMouse(x, y, z) {
+    let mouse = x;
+    let cat1 = y;
+    let cat2 = z;
 
-function highestCount(arr,numero) {
-    let contador = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == numero) {
-            contador++;
-        }
+    if ((Math.abs(mouse-cat1)) < (Math.abs(mouse - cat2))) {
+        return "cat 1"
+    } else if ((Math.abs(mouse-cat1)) > (Math.abs(mouse - cat2))) {
+
+        return "cat 2"         
+    } else {
+
+        return "os gatos trombam e o gato foge"
     }
-    return contador;
 }
 
-let arrayTeste = [0, 0, 0];
-let maiorNumero = highest(arrayTeste);
-let repeticoes = highestCount(arrayTeste,maiorNumero);
-
-console.log(repeticoes);
+console.log (catAndMouse(5, 1, 8));
+console.log (catAndMouse(8, 2, 20));
+console.log (catAndMouse(5, 3, 7));
